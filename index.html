@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +10,62 @@
     <!-- Iconos de Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-slate-950 min-h-screen flex flex-col relative overflow-x-hidden text-slate-300 selection:bg-indigo-500 selection:text-white">
+
+<body
+    class="bg-slate-950 min-h-screen flex flex-col relative overflow-x-hidden text-slate-300 selection:bg-indigo-500 selection:text-white">
 
     <!-- Fondo animado con orbes -->
     <div class="fixed inset-0 w-full h-full pointer-events-none z-0 flex justify-center items-center overflow-hidden">
-        <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-indigo-600/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob"></div>
-        <div class="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-purple-600/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-2000"></div>
-        <div class="absolute bottom-10 left-1/3 w-[600px] h-[600px] bg-cyan-600/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-4000"></div>
+        <div
+            class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-indigo-600/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob">
+        </div>
+        <div
+            class="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-purple-600/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute bottom-10 left-1/3 w-[600px] h-[600px] bg-cyan-600/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-4000">
+        </div>
     </div>
 
     <!-- Encabezado -->
     <header class="relative z-10 pt-24 pb-12 text-center">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md shadow-lg">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col items-center">
+            
+            <div
+                class="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md shadow-lg">
                 <span class="relative flex h-3 w-3">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-indigo-500"></span>
                 </span>
-                <span class="text-sm font-semibold tracking-widest text-indigo-300 uppercase">Universidad Continental — Sede Cusco</span>
+                <span class="text-sm font-semibold tracking-widest text-indigo-300 uppercase">Universidad Continental —
+                    Sede Cusco</span>
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500 drop-shadow-2xl">
+            
+            <h1
+                class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500 drop-shadow-2xl">
                 Diseño de Software
             </h1>
+            
+            <!-- Logo principal en círculo -->
+            <div class="relative w-48 h-48 md:w-56 md:h-56 mb-6 group">
+                <div class="absolute inset-0 bg-indigo-500/20 rounded-full blur-xl group-hover:bg-indigo-500/40 transition-all duration-500"></div>
+                <img src="assets/img/logo-malditos.png" alt="Logo Los Malditos de Diseño de Software" class="relative w-full h-full rounded-full object-cover border-4 border-indigo-500/30 drop-shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:scale-105 transition-all duration-500 will-change-transform bg-slate-900">
+            </div>
+            
+            <!-- Nombre del equipo -->
+            <h2 class="text-2xl md:text-4xl font-black mb-8 tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-white to-slate-400 drop-shadow-lg">
+                Los Malditos de Diseño de Software
+            </h2>
+            
             <p class="text-lg md:text-2xl text-slate-400 font-light max-w-2xl mx-auto">
-                Conoce al equipo de estudiantes de <span class="text-indigo-300 font-medium">Ingeniería Informática</span> que está desarrollando este proyecto.
+                Conoce al equipo de estudiantes de <span class="text-indigo-300 font-medium">Ingeniería
+                    Informática</span> que está desarrollando este proyecto.
             </p>
         </div>
     </header>
@@ -46,96 +75,118 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
 
             <!-- Tarjeta 1: Saul -->
-            <div class="bg-slate-900/40 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/10 overflow-hidden hover:-translate-y-4 hover:shadow-[0_20px_40px_-15px_rgba(6,182,212,0.4)] hover:border-cyan-500/40 transition-all duration-500 group fade-in delay-1 flex flex-col">
+            <div
+                class="bg-slate-900/40 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/10 overflow-hidden hover:-translate-y-4 hover:shadow-[0_20px_40px_-15px_rgba(6,182,212,0.4)] hover:border-cyan-500/40 transition-all duration-500 group fade-in delay-1 flex flex-col">
                 <div class="h-32 bg-gradient-to-r from-cyan-500 to-blue-600 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
+                    <div
+                        class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay">
+                    </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 </div>
                 <div class="px-6 pb-8 relative flex-grow flex flex-col">
                     <img src="assets/img/saul.jpg"
-                         onerror="this.onerror=null; this.src='https://i.pravatar.cc/150?u=saul'"
-                         alt="Saul Adain Huillca Rodriguez"
-                         class="w-28 h-28 rounded-full border-4 border-slate-900 object-cover mx-auto -mt-16 shadow-xl ring-4 ring-cyan-500/20 group-hover:ring-cyan-500/60 group-hover:scale-110 transition-all duration-500 bg-slate-800">
+                        onerror="this.onerror=null; this.src='https://i.pravatar.cc/150?u=saul'"
+                        alt="Saul Adain Huillca Rodriguez"
+                        class="w-28 h-28 rounded-full border-4 border-slate-900 object-cover mx-auto -mt-16 shadow-xl ring-4 ring-cyan-500/20 group-hover:ring-cyan-500/60 group-hover:scale-110 transition-all duration-500 bg-slate-800">
                     <div class="text-center mt-5 flex-grow">
                         <h2 class="text-xl font-bold text-white mb-1">Saul Adain<br>Huillca Rodriguez</h2>
-                        <p class="text-[10px] font-bold text-cyan-400 mb-4 uppercase tracking-widest mt-2">Ing. Informática</p>
+                        <p class="text-[10px] font-bold text-cyan-400 mb-4 uppercase tracking-widest mt-2">Ing.
+                            Informática</p>
                         <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            Apasionado por el desarrollo y diseño de software. Buscando soluciones eficientes a problemas complejos.
+                            Apasionado por el desarrollo y diseño de software. Buscando soluciones eficientes a
+                            problemas complejos.
                         </p>
                     </div>
-                    <button onclick="openModal('saul')" class="w-full mt-auto bg-slate-800/80 text-cyan-400 border border-cyan-500/30 px-4 py-3 rounded-xl text-sm font-semibold hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all duration-300 flex items-center justify-center gap-2">
+                    <button onclick="openModal('saul')"
+                        class="w-full mt-auto bg-slate-800/80 text-cyan-400 border border-cyan-500/30 px-4 py-3 rounded-xl text-sm font-semibold hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all duration-300 flex items-center justify-center gap-2">
                         <i class="ph ph-user-circle text-lg"></i> Ver Perfil Completo
                     </button>
                 </div>
             </div>
 
             <!-- Tarjeta 2: Eduardo -->
-            <div class="bg-slate-900/40 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/10 overflow-hidden hover:-translate-y-4 hover:shadow-[0_20px_40px_-15px_rgba(16,185,129,0.4)] hover:border-emerald-500/40 transition-all duration-500 group fade-in delay-2 flex flex-col">
+            <div
+                class="bg-slate-900/40 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/10 overflow-hidden hover:-translate-y-4 hover:shadow-[0_20px_40px_-15px_rgba(16,185,129,0.4)] hover:border-emerald-500/40 transition-all duration-500 group fade-in delay-2 flex flex-col">
                 <div class="h-32 bg-gradient-to-r from-emerald-500 to-teal-600 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
+                    <div
+                        class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay">
+                    </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 </div>
                 <div class="px-6 pb-8 relative flex-grow flex flex-col">
                     <img src="assets/img/eduardo.jpg"
-                         onerror="this.onerror=null; this.src='https://i.pravatar.cc/150?u=eduardo'"
-                         alt="Eduardo Luna Lezano"
-                         class="w-28 h-28 rounded-full border-4 border-slate-900 object-cover mx-auto -mt-16 shadow-xl ring-4 ring-emerald-500/20 group-hover:ring-emerald-500/60 group-hover:scale-110 transition-all duration-500 bg-slate-800">
+                        onerror="this.onerror=null; this.src='https://i.pravatar.cc/150?u=eduardo'"
+                        alt="Eduardo Luna Lezano"
+                        class="w-28 h-28 rounded-full border-4 border-slate-900 object-cover mx-auto -mt-16 shadow-xl ring-4 ring-emerald-500/20 group-hover:ring-emerald-500/60 group-hover:scale-110 transition-all duration-500 bg-slate-800">
                     <div class="text-center mt-5 flex-grow">
                         <h2 class="text-xl font-bold text-white mb-1">Eduardo<br>Luna Lezano</h2>
-                        <p class="text-[10px] font-bold text-emerald-400 mb-4 uppercase tracking-widest mt-2">Ing. Informática</p>
+                        <p class="text-[10px] font-bold text-emerald-400 mb-4 uppercase tracking-widest mt-2">Ing.
+                            Informática</p>
                         <p class="text-slate-400 text-sm mb-6 leading-relaxed">
                             Enfocado en el análisis estructurado y la creación de arquitecturas de software sostenibles.
                         </p>
                     </div>
-                    <button onclick="openModal('eduardo')" class="w-full mt-auto bg-slate-800/80 text-emerald-400 border border-emerald-500/30 px-4 py-3 rounded-xl text-sm font-semibold hover:bg-emerald-500 hover:text-white hover:shadow-[0_0_20px_rgba(16,185,129,0.5)] transition-all duration-300 flex items-center justify-center gap-2">
+                    <button onclick="openModal('eduardo')"
+                        class="w-full mt-auto bg-slate-800/80 text-emerald-400 border border-emerald-500/30 px-4 py-3 rounded-xl text-sm font-semibold hover:bg-emerald-500 hover:text-white hover:shadow-[0_0_20px_rgba(16,185,129,0.5)] transition-all duration-300 flex items-center justify-center gap-2">
                         <i class="ph ph-user-circle text-lg"></i> Ver Perfil Completo
                     </button>
                 </div>
             </div>
 
             <!-- Tarjeta 3: Gari -->
-            <div class="bg-slate-900/40 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/10 overflow-hidden hover:-translate-y-4 hover:shadow-[0_20px_40px_-15px_rgba(168,85,247,0.4)] hover:border-purple-500/40 transition-all duration-500 group fade-in delay-3 flex flex-col">
+            <div
+                class="bg-slate-900/40 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/10 overflow-hidden hover:-translate-y-4 hover:shadow-[0_20px_40px_-15px_rgba(168,85,247,0.4)] hover:border-purple-500/40 transition-all duration-500 group fade-in delay-3 flex flex-col">
                 <div class="h-32 bg-gradient-to-r from-purple-500 to-pink-600 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
+                    <div
+                        class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay">
+                    </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 </div>
                 <div class="px-6 pb-8 relative flex-grow flex flex-col">
                     <img src="assets/img/gari.jpg"
-                         onerror="this.onerror=null; this.src='https://i.pravatar.cc/150?u=gari'"
-                         alt="Gari Joel Chavez Huanca"
-                         class="w-28 h-28 rounded-full border-4 border-slate-900 object-cover mx-auto -mt-16 shadow-xl ring-4 ring-purple-500/20 group-hover:ring-purple-500/60 group-hover:scale-110 transition-all duration-500 bg-slate-800">
+                        onerror="this.onerror=null; this.src='https://i.pravatar.cc/150?u=gari'"
+                        alt="Gari Joel Chavez Huanca"
+                        class="w-28 h-28 rounded-full border-4 border-slate-900 object-cover mx-auto -mt-16 shadow-xl ring-4 ring-purple-500/20 group-hover:ring-purple-500/60 group-hover:scale-110 transition-all duration-500 bg-slate-800">
                     <div class="text-center mt-5 flex-grow">
                         <h2 class="text-xl font-bold text-white mb-1">Gari Joel<br>Chavez Huanca</h2>
-                        <p class="text-[10px] font-bold text-purple-400 mb-4 uppercase tracking-widest mt-2">Ing. Informática</p>
+                        <p class="text-[10px] font-bold text-purple-400 mb-4 uppercase tracking-widest mt-2">Ing.
+                            Informática</p>
                         <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            Apasionado por la tecnología y la optimización de procesos mediante el desarrollo de software.
+                            Apasionado por la tecnología y la optimización de procesos mediante el desarrollo de
+                            software.
                         </p>
                     </div>
-                    <button onclick="openModal('gari')" class="w-full mt-auto bg-slate-800/80 text-purple-400 border border-purple-500/30 px-4 py-3 rounded-xl text-sm font-semibold hover:bg-purple-500 hover:text-white hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] transition-all duration-300 flex items-center justify-center gap-2">
+                    <button onclick="openModal('gari')"
+                        class="w-full mt-auto bg-slate-800/80 text-purple-400 border border-purple-500/30 px-4 py-3 rounded-xl text-sm font-semibold hover:bg-purple-500 hover:text-white hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] transition-all duration-300 flex items-center justify-center gap-2">
                         <i class="ph ph-user-circle text-lg"></i> Ver Perfil Completo
                     </button>
                 </div>
             </div>
 
             <!-- Tarjeta 4: Pendiente (placeholder para el cuarto integrante) -->
-            <div class="bg-slate-900/40 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/10 overflow-hidden hover:-translate-y-4 hover:shadow-[0_20px_40px_-15px_rgba(249,115,22,0.4)] hover:border-orange-500/40 transition-all duration-500 group fade-in delay-4 flex flex-col">
+            <div
+                class="bg-slate-900/40 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/10 overflow-hidden hover:-translate-y-4 hover:shadow-[0_20px_40px_-15px_rgba(249,115,22,0.4)] hover:border-orange-500/40 transition-all duration-500 group fade-in delay-4 flex flex-col">
                 <div class="h-32 bg-gradient-to-r from-orange-500 to-red-600 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
+                    <div
+                        class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay">
+                    </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 </div>
                 <div class="px-6 pb-8 relative flex-grow flex flex-col">
                     <img src="assets/img/cuarto.jpg"
-                         onerror="this.onerror=null; this.src='https://i.pravatar.cc/150?u=cuarto'"
-                         alt="Cuarto Integrante"
-                         class="w-28 h-28 rounded-full border-4 border-slate-900 object-cover mx-auto -mt-16 shadow-xl ring-4 ring-orange-500/20 group-hover:ring-orange-500/60 group-hover:scale-110 transition-all duration-500 bg-slate-800">
+                        onerror="this.onerror=null; this.src='https://i.pravatar.cc/150?u=cuarto'"
+                        alt="Rodolfo Nicolás Galdos Pantani"
+                        class="w-28 h-28 rounded-full border-4 border-slate-900 object-cover mx-auto -mt-16 shadow-xl ring-4 ring-orange-500/20 group-hover:ring-orange-500/60 group-hover:scale-110 transition-all duration-500 bg-slate-800">
                     <div class="text-center mt-5 flex-grow">
-                        <h2 class="text-xl font-bold text-white mb-1">Cuarto<br>Integrante</h2>
-                        <p class="text-[10px] font-bold text-orange-400 mb-4 uppercase tracking-widest mt-2">Ing. Informática</p>
+                        <h2 class="text-xl font-bold text-white mb-1">Rodolfo Nicolás<br>Galdos Pantani</h2>
+                        <p class="text-[10px] font-bold text-orange-400 mb-4 uppercase tracking-widest mt-2">Ing.
+                            Informática</p>
                         <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            Espacio reservado para el cuarto integrante del equipo. (Por actualizar)
+                            Como estudiante de ingeniería de sistemas, desarrollo habilidades en programación, análisis y resolución problemas tecnológicos.
                         </p>
                     </div>
-                    <button onclick="openModal('cuarto')" class="w-full mt-auto bg-slate-800/80 text-orange-400 border border-orange-500/30 px-4 py-3 rounded-xl text-sm font-semibold hover:bg-orange-500 hover:text-white hover:shadow-[0_0_20px_rgba(249,115,22,0.5)] transition-all duration-300 flex items-center justify-center gap-2">
+                    <button onclick="openModal('cuarto')"
+                        class="w-full mt-auto bg-slate-800/80 text-orange-400 border border-orange-500/30 px-4 py-3 rounded-xl text-sm font-semibold hover:bg-orange-500 hover:text-white hover:shadow-[0_0_20px_rgba(249,115,22,0.5)] transition-all duration-300 flex items-center justify-center gap-2">
                         <i class="ph ph-user-circle text-lg"></i> Ver Perfil Completo
                     </button>
                 </div>
@@ -144,41 +195,103 @@
         </div>
     </main>
 
+    <!-- Proyectos de la Asignatura -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-20 fade-in delay-4">
+        <div
+            class="bg-slate-900/40 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/10 overflow-hidden p-8 md:p-12 relative group hover:border-indigo-500/40 transition-all duration-500">
+            <div
+                class="absolute -top-24 -right-24 w-96 h-96 bg-indigo-600/10 rounded-full filter blur-3xl group-hover:bg-indigo-600/20 transition-all duration-500">
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-10 items-center relative z-10">
+                <div class="w-full md:w-3/5">
+                    <div
+                        class="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-wider">
+                        <i class="ph ph-hourglass-high animate-pulse text-sm"></i>
+                        En fase de desarrollo / Próximamente
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Proyectos de la Asignatura</h2>
+                    <h3 class="text-indigo-400 font-medium text-lg mb-4">De la teoría a la arquitectura de código.</h3>
+                    <p class="text-slate-400 leading-relaxed mb-4">
+                        En esta sección documentaremos y expondremos los proyectos desarrollados durante el semestre
+                        para el curso de Diseño de Software. Actualmente nos encontramos en la fase de análisis de
+                        requerimientos y modelado de la arquitectura.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Nuestro equipo está aplicando principios de ingeniería, patrones de diseño y modelado UML para
+                        garantizar soluciones escalables y eficientes. Los repositorios, la documentación técnica y las
+                        demostraciones interactivas serán publicados en este espacio próximamente.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-2/5 flex justify-center">
+                    <div
+                        class="w-full bg-slate-950/50 rounded-2xl border border-dashed border-slate-700 p-8 flex flex-col items-center justify-center min-h-[250px]">
+                        <i class="ph ph-brackets-curly text-6xl text-slate-600 mb-4"></i>
+                        <p class="text-slate-500 font-medium text-center mb-6">Espacio reservado para el despliegue del
+                            software</p>
+
+                        <div class="w-full w-4/5 mx-auto">
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-500 font-medium">Análisis y Diseño</span>
+                                <span class="text-indigo-400 font-bold">20%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                                <div class="bg-indigo-500 w-1/5 h-1.5 rounded-full relative">
+                                    <div class="absolute top-0 right-0 bottom-0 left-0 bg-white/20 animate-pulse"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Modal de perfil -->
     <div id="profileModal" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300 ease-out">
         <div class="absolute inset-0 bg-slate-950/80 backdrop-blur-md" onclick="closeModal()"></div>
 
         <div class="absolute inset-0 flex items-center justify-center p-4 pointer-events-none">
-            <div id="modalCard" class="bg-slate-900 border border-slate-700 rounded-3xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto pointer-events-auto transform scale-95 transition-all duration-300 ease-out relative flex flex-col md:flex-row">
+            <div id="modalCard"
+                class="bg-slate-900 border border-slate-700 rounded-3xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto pointer-events-auto transform scale-95 transition-all duration-300 ease-out relative flex flex-col md:flex-row">
 
-                <button onclick="closeModal()" class="absolute top-4 right-4 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white p-2 rounded-full transition-colors z-10">
+                <button onclick="closeModal()"
+                    class="absolute top-4 right-4 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white p-2 rounded-full transition-colors z-10">
                     <i class="ph ph-x font-bold"></i>
                 </button>
 
-                <div id="modalLeft" class="md:w-1/3 p-8 flex flex-col items-center border-b md:border-b-0 md:border-r border-slate-800 relative overflow-hidden rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
+                <div id="modalLeft"
+                    class="md:w-1/3 p-8 flex flex-col items-center border-b md:border-b-0 md:border-r border-slate-800 relative overflow-hidden rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
                     <div id="modalBg" class="absolute inset-0 opacity-20"></div>
-                    <img id="modalImg" src="" alt="Foto de perfil" class="w-32 h-32 rounded-full border-4 object-cover shadow-xl relative z-10 mb-4 bg-slate-800">
+                    <img id="modalImg" src="" alt="Foto de perfil"
+                        class="w-32 h-32 rounded-full border-4 object-cover shadow-xl relative z-10 mb-4 bg-slate-800">
                     <h3 id="modalName" class="text-2xl font-bold text-white text-center relative z-10">Nombre</h3>
-                    <p id="modalRole" class="text-xs font-bold uppercase tracking-wider mb-6 relative z-10 text-center">Rol</p>
+                    <p id="modalRole" class="text-xs font-bold uppercase tracking-wider mb-6 relative z-10 text-center">
+                        Rol</p>
 
                     <div class="w-full space-y-3 relative z-10 mt-auto">
-                        <a id="modalGithub" href="#" target="_blank" class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm bg-slate-950/50 p-3 rounded-xl border border-white/5">
+                        <a id="modalGithub" href="#" target="_blank"
+                            class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm bg-slate-950/50 p-3 rounded-xl border border-white/5">
                             <i class="ph ph-github-logo text-xl"></i> Ver GitHub
                         </a>
-                        <a href="#" class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm bg-slate-950/50 p-3 rounded-xl border border-white/5 opacity-50 cursor-not-allowed">
+                        <a href="#"
+                            class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-sm bg-slate-950/50 p-3 rounded-xl border border-white/5 opacity-50 cursor-not-allowed">
                             <i class="ph ph-linkedin-logo text-xl"></i> LinkedIn (Pendiente)
                         </a>
                     </div>
                 </div>
 
                 <div class="md:w-2/3 p-8">
-                    <h4 class="text-white text-lg font-bold mb-3 border-b border-slate-800 pb-2 flex items-center gap-2">
+                    <h4
+                        class="text-white text-lg font-bold mb-3 border-b border-slate-800 pb-2 flex items-center gap-2">
                         <i class="ph ph-identification-card text-slate-400"></i> Sobre Mí
                     </h4>
                     <p id="modalBio" class="text-slate-400 text-sm leading-relaxed mb-8">
                         Biografía completa aquí...
                     </p>
-                    <h4 class="text-white text-lg font-bold mb-4 border-b border-slate-800 pb-2 flex items-center gap-2">
+                    <h4
+                        class="text-white text-lg font-bold mb-4 border-b border-slate-800 pb-2 flex items-center gap-2">
                         <i class="ph ph-chart-bar text-slate-400"></i> Nivel de Habilidades (Estimado)
                     </h4>
                     <div id="modalSkills" class="space-y-4">
@@ -192,7 +305,8 @@
 
     <!-- Pie de página -->
     <footer class="relative z-10 border-t border-white/10 mt-auto bg-slate-950/80 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div
+            class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="text-center md:text-left">
                 <p class="text-slate-300 font-bold text-lg mb-1">
                     Grupo: Los Malditos de Diseño de Software
@@ -210,4 +324,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

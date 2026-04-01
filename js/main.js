@@ -47,13 +47,13 @@ const studentsData = {
         ]
     },
     cuarto: {
-        name: "Cuarto Integrante",
+        name: "Rodolfo Nicolás Galdos Pantani",
         role: "Ing. Informática",
         colorClass: "orange",
         img: "assets/img/cuarto.jpg",
         fallbackImg: "https://i.pravatar.cc/150?u=cuarto",
-        github: "https://github.com/",
-        bio: "Estudiante de Ingeniería Informática en la Universidad Continental sede Cusco. (Perfil pendiente de ser actualizado con la información del cuarto miembro del equipo).",
+        github: "https://github.com/Gal2-dev",
+        bio: "Como estudiante de ingeniería de sistemas, desarrollo habilidades en programación, análisis y resolución problemas tecnológicos.",
         skills: [
             { name: "Habilidad 1", level: "70%" },
             { name: "Habilidad 2", level: "70%" },
